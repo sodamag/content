@@ -12,39 +12,39 @@ $csv = file_get_contents($csv[0]);
 $code = str_getcsv($csv,"\n");
 
 $colors = array(
-'Черный'	=>	'blk',
-'Бордовый'	=>	'bordo',
-'Серый'	=>	'grey',
-'Кремовый'	=>	'cream',
-'Коричневый'	=>	'brown',
-'Бежевый'	=>	'beige',
-'Синий'	=>	'blue',
-'Красный'	=>	'red',
-'Зеленый'	=>	'green',
-'Оранжевый'	=>	'orange',
-'Белый '	=>	'white',
-'Розовый'	=>	'pink',
-'Желтый'	=>	'yellow',
-'Кирпичный'	=>	'brick',
-'Коралоовый'	=>	'corall',
-'Горчичный'	=>	'mustard',
-'Персиковый'	=>	'peach',
-'Мятный'	=>	'mint',
-'Темно-синий'	=>	'navy',
-'Темно-коричневый'	=>	'dark-brown',
-'Темно-серый'	=>	'dark-gray',
-'Черно-белый'	=>	'blk&white',
-'Светло-серый'	=>	'light-pink',
-'Светло-коричневый'	=>	'light-brown',
-'Молочный'	=>	'milk',
-'Фиолетовый'	=>	'purple',
-'Оливковый'	=>	'olive',
-'Хаки'	=>	'khaki',
-'Песочный'	=>	'beige',
-'Сиреневый'	=>	'purple',
-'Фуксия'	=>	'pink',
-'Лиловый'	=>	'purple',
-'Принт'	=>	'print'
+'черный'	=>	'blk',
+'бордовый'	=>	'bordo',
+'серый'	=>	'grey',
+'кремовый'	=>	'cream',
+'коричневый'	=>	'brown',
+'бежевый'	=>	'beige',
+'синий'	=>	'blue',
+'красный'	=>	'red',
+'зеленый'	=>	'green',
+'оранжевый'	=>	'orange',
+'белый '	=>	'white',
+'розовый'	=>	'pink',
+'желтый'	=>	'yellow',
+'еирпичный'	=>	'brick',
+'еоралоовый'	=>	'corall',
+'горчичный'	=>	'mustard',
+'персиковый'	=>	'peach',
+'мятный'	=>	'mint',
+'темно-синий'	=>	'navy',
+'темно-коричневый'	=>	'dark-brown',
+'темно-серый'	=>	'dark-gray',
+'черно-белый'	=>	'blk&white',
+'светло-серый'	=>	'light-pink',
+'светло-коричневый'	=>	'light-brown',
+'молочный'	=>	'milk',
+'фиолетовый'	=>	'purple',
+'оливковый'	=>	'olive',
+'хаки'	=>	'khaki',
+'песочный'	=>	'beige',
+'сиреневый'	=>	'purple',
+'фуксия'	=>	'pink',
+'лиловый'	=>	'purple',
+'принт'	=>	'print'
 );
 
 $products = array();
@@ -110,7 +110,7 @@ foreach ($photos as $photo) {
     }
   }
   $code = implode("\n",$lines);
-  
+
   header ( 'Content-type: text/csv' );
   header ( 'Content-Disposition: attachment; filename="orders.csv"' );
   print_r($code);
