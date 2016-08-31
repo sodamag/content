@@ -44,7 +44,8 @@ $colors = array(
 'сиреневый'	=>	'purple',
 'фуксия'	=>	'pink',
 'лиловый'	=>	'purple',
-'принт'	=>	'print'
+'принт'	=>	'print',
+'джинс' => 'denim'
 );
 
 $products = array();
